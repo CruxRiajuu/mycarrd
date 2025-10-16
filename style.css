@@ -1,5 +1,13 @@
 /* --- FONT DEFINITIONS --- */
 @font-face {
+    font-family: 'AdinaOutlined';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaOutlined.otf') format('opentype');
+}
+@font-face {
+    font-family: 'AdinaRegular';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaRegular.otf') format('opentype');
+}
+@font-face {
     font-family: 'RampageBrush';
     src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/RampageBrush.ttf') format('truetype');
 }
@@ -61,7 +69,7 @@
 }
 @font-face {
     font-family: 'Friza-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Friza-Bold.ttf') format('truetype');
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Friza%20Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Friza';
@@ -90,14 +98,6 @@
 @font-face {
     font-family: 'MangaMasterBB-BoldItal';
     src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB-BoldItal.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'AdinaOutlined';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaOutlined.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'AdinaRegular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaRegular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'ZippyScratchHand-Regular';
