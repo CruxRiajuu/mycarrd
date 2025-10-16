@@ -1,0 +1,339 @@
+/* Import Abel font for submenu */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* --- Base Styles --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --- Desktop Navigation Bar --- */
+.ff7-nav-bar {
+    background: linear-gradient(to bottom, #011f2a 0%, #01131a 45%, #000000 100%);
+    border-bottom: 1px solid #1c2d3a;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 25px;
+    transition: top 0.4s cubic-bezier(0.2, 0, 0, 1);
+    will-change: top;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.ff7-nav-bar.hidden {
+    top: -80px !important;
+}
+
+.ff7-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ff7-nav-logo-link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.ff7-nav-logo-link:hover {
+    transform: translate(-50%, -50%) scale(1.15, 1.02);
+}
+
+.ff7-nav-logo-img {
+    height: 60px;
+    transition: filter 0.3s ease;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+}
+
+.ff7-nav-logo-link:hover .ff7-nav-logo-img {
+    filter: drop-shadow(0 0 18px rgba(0, 185, 229, 1)) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+}
+
+.ff7-nav-list-left,
+.ff7-nav-list-right {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ff7-nav-list-left {
+    padding-right: 180px;
+    justify-content: flex-end;
+}
+
+.ff7-nav-list-right {
+    padding-left: 180px;
+    justify-content: flex-start;
+}
+
+.ff7-nav-item {
+    position: relative;
+}
+
+.ff7-nav-link,
+.ff7-nav-submenu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    transition: color 0.3s, text-shadow 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+    line-height: 80px;
+    z-index: 10;
+    background: transparent;
+}
+
+.ff7-nav-submenu-link {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 8px 20px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Abel', sans-serif;
+    transition: color 0.3s, text-shadow 0.3s ease, background 0.3s, transform 0.3s ease;
+}
+
+.ff7-nav-link:hover,
+.ff7-nav-submenu-link:hover {
+    color: #00b9e5;
+    text-shadow: 0 0 10px #00b9e5;
+    transform: scale(1.08);
+}
+
+.ff7-nav-link.active,
+.ff7-nav-submenu-link.active {
+    color: #00b9e5;
+    text-shadow: 0 0 10px #00b9e5;
+}
+
+.ff7-nav-link.active:hover,
+.ff7-nav-submenu-link.active:hover {
+    transform: scale(1.08);
+}
+
+.ff7-nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(8px);
+    border-top: 2px solid #00b9e5;
+    min-width: max-content;
+    z-index: 5;
+}
+
+.ff7-nav-submenu .ff7-nav-item:hover > .ff7-nav-submenu-link {
+    color: #00b9e5;
+    background: rgba(0, 185, 229, 0.1);
+}
+
+.ff7-nav-item:hover > .ff7-nav-submenu {
+    display: block;
+}
+
+.ff7-nav-list-left > .ff7-nav-item > .ff7-nav-submenu {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ff7-nav-list-right > .ff7-nav-item > .ff7-nav-submenu {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.ff7-nav-list-left .ff7-nav-submenu .ff7-nav-submenu {
+    top: -2px; left: 100%; transform: none; border-top: none; border-left: 2px solid #00b9e5;
+}
+
+.ff7-nav-list-right .ff7-nav-submenu .ff7-nav-submenu {
+    top: -2px; right: 100%; transform: none; border-top: none; border-right: 2px solid #00b9e5;
+}
+
+/* --- Marker Icon Styles --- */
+.nav-marker-icon-left,
+.nav-marker-icon-right {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, filter 0.3s;
+    pointer-events: none;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+}
+
+.ff7-nav-logo-link > .ff7-logo-marker.nav-marker-icon-left {
+    left: -10px; transform: translateY(-50%);
+}
+
+.ff7-nav-logo-link > .ff7-logo-marker.nav-marker-icon-right {
+    right: -10px; transform: translateY(-50%);
+}
+
+.ff7-nav-link > .nav-marker-icon-left,
+.ff7-nav-submenu-link > .nav-marker-icon-left {
+    left: -10px; transform: translateY(-50%);
+}
+
+.ff7-nav-link > .nav-marker-icon-right,
+.ff7-nav-submenu-link > .nav-marker-icon-right {
+    right: -10px; transform: translateY(-50%);
+}
+
+.ff7-nav-link:hover > .nav-marker-icon-left,
+.ff7-nav-submenu-link:hover > .nav-marker-icon-left,
+.ff7-nav-logo-link:hover > .ff7-logo-marker.nav-marker-icon-left {
+    opacity: 1 !important;
+    filter: invert(100%) drop-shadow(0 0 5px #00b9e5) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+    animation: breathe-on-hover-left 1s infinite alternate ease-in-out;
+}
+
+.ff7-nav-link:hover > .nav-marker-icon-right,
+.ff7-nav-submenu-link:hover > .nav-marker-icon-right,
+.ff7-nav-logo-link:hover > .ff7-logo-marker.nav-marker-icon-right {
+    opacity: 1 !important;
+    filter: invert(100%) drop-shadow(0 0 5px #00b9e5) drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+    animation: breathe-on-hover-right 1s infinite alternate ease-in-out;
+}
+
+@keyframes breathe-on-hover-left {
+    0% { transform: translateY(-50%) translateX(2px) scale(1); }
+    100% { transform: translateY(-50%) translateX(-2px) scale(1.05); }
+}
+
+@keyframes breathe-on-hover-right {
+    0% { transform: translateY(-50%) translateX(-2px) scale(1); }
+    100% { transform: translateY(-50%) translateX(2px) scale(1.05); }
+}
+
+/* --- Responsive & Mobile Styles --- */
+.ff7-hamburger-menu, .ff7-mobile-overlay {
+    display: none;
+}
+
+/* Breakpoint for tablets and smaller */
+@media (max-width: 1024px) {
+    /* Hide desktop nav links */
+    .ff7-nav-list-left, .ff7-nav-list-right {
+        display: none;
+    }
+
+    /* Adjust container padding for smaller screens */
+    .ff7-nav-bar {
+        padding: 0 15px;
+    }
+
+    /* Show and style hamburger icon */
+    .ff7-hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        position: absolute;
+        right: 0; /* Aligns to the right of the container */
+    }
+    
+    .ff7-hamburger-menu span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger animation to 'X' */
+    .ff7-hamburger-menu.open span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .ff7-hamburger-menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .ff7-hamburger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Mobile Overlay Menu */
+    .ff7-mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 999;
+        display: flex; /* Using flex to center content */
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .ff7-mobile-overlay.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .ff7-mobile-nav-links {
+        text-align: center;
+        padding-top: 80px; /* Push content down from nav bar */
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto; /* Allow scrolling if needed */
+    }
+
+    .ff7-mobile-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        display: block;
+        /* Slimmer buttons */
+        margin: 15px 0; 
+        padding: 10px;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    .ff7-mobile-link:hover, .ff7-mobile-link.active {
+        color: #00b9e5;
+        text-shadow: 0 0 10px #00b9e5;
+    }
+
+    .ff7-mobile-sublink {
+        color: #ccc;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+}
