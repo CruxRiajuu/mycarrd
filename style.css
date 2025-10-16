@@ -104,7 +104,7 @@
     src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/ZippyScratchHand-Regular.ttf') format('truetype');
 }
 
-/* Import Abel font for submenu */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -194,8 +194,8 @@ body {
     position: relative;
 }
 
-.ff7-nav-link,
-.ff7-nav-submenu-link {
+/* THIS IS THE FIX: SEPARATED THE RULES */
+.ff7-nav-link {
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -209,6 +209,7 @@ body {
     height: 80px;
     transition: color 0.3s, text-shadow 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
+    /* Correct font for main nav links */
     font-family: 'AdinaRegular', sans-serif;
     position: relative;
     line-height: 80px;
@@ -217,14 +218,27 @@ body {
 }
 
 .ff7-nav-submenu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: 0.5px;
     padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 30px;
-    line-height: 30px;
-    font-family: 'Abel', sans-serif;
     transition: color 0.3s, text-shadow 0.3s ease, background 0.3s, transform 0.3s ease;
+    white-space: nowrap;
+    /* Correct font for submenu links */
+    font-family: 'Abel', sans-serif;
+    position: relative;
+    line-height: 30px;
+    z-index: 10;
+    background: transparent;
 }
+
 
 .ff7-nav-link:hover,
 .ff7-nav-submenu-link:hover {
