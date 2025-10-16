@@ -1,109 +1,3 @@
-/* --- FONT DEFINITIONS --- */
-@font-face {
-    font-family: 'AdinaOutlined';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaOutlined.otf') format('opentype');
-}
-@font-face {
-    font-family: 'AdinaRegular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaRegular.otf') format('opentype');
-}
-@font-face {
-    font-family: 'RampageBrush';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/RampageBrush.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'CruxComicHand';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/CruxComicHand.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'CruxHand-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/CruxHand-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Authority-Distressed';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Distressed.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Authority-DistressedItalic';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-DistressedItalic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Authority-Italic';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Italic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Authority-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Authority-Rounded';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Rounded.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Authority-RoundedItalic';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-RoundedItalic.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Autom-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Autom-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Bebal-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Bebal-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Bison-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Bison-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'CyberSocial-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/CyberSocial-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Excluded-z8XrX';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Excluded-z8XrX.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Excludeditalic-jEr99';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Excludeditalic-jEr99.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Friza-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Friza%20Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Friza';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Friza.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Genesys';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Genesys.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'HaleyHand-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/HaleyHand-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'MangaMasterBB_ital';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB_ital.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'MangaMasterBB_reg';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB_reg.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'MangaMasterBB-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB-Bold.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'MangaMasterBB-BoldItal';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB-BoldItal.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'ZippyScratchHand-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/ZippyScratchHand-Regular.ttf') format('truetype');
-}
-
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -194,7 +88,6 @@ body {
     position: relative;
 }
 
-/* THIS IS THE FIX: SEPARATED THE RULES */
 .ff7-nav-link {
     color: white;
     text-decoration: none;
@@ -209,7 +102,6 @@ body {
     height: 80px;
     transition: color 0.3s, text-shadow 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
-    /* Correct font for main nav links */
     font-family: 'AdinaRegular', sans-serif;
     position: relative;
     line-height: 80px;
@@ -231,14 +123,12 @@ body {
     height: 30px;
     transition: color 0.3s, text-shadow 0.3s ease, background 0.3s, transform 0.3s ease;
     white-space: nowrap;
-    /* Correct font for submenu links */
     font-family: 'Abel', sans-serif;
     position: relative;
     line-height: 30px;
     z-index: 10;
     background: transparent;
 }
-
 
 .ff7-nav-link:hover,
 .ff7-nav-submenu-link:hover {
@@ -363,17 +253,14 @@ body {
 
 /* Breakpoint for tablets and smaller */
 @media (max-width: 1024px) {
-    /* Hide desktop nav links */
     .ff7-nav-list-left, .ff7-nav-list-right {
         display: none;
     }
 
-    /* Adjust container padding for smaller screens */
     .ff7-nav-bar {
         padding: 0 15px;
     }
 
-    /* Show and style hamburger icon */
     .ff7-hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -382,7 +269,7 @@ body {
         height: 25px;
         cursor: pointer;
         position: absolute;
-        right: 0; /* Aligns to the right of the container */
+        right: 0;
     }
     
     .ff7-hamburger-menu span {
@@ -392,7 +279,6 @@ body {
         transition: all 0.3s ease;
     }
 
-    /* Hamburger animation to 'X' */
     .ff7-hamburger-menu.open span:nth-child(1) {
         transform: rotate(45deg) translate(7px, 7px);
     }
@@ -403,7 +289,6 @@ body {
         transform: rotate(-45deg) translate(7px, -7px);
     }
     
-    /* Mobile Overlay Menu */
     .ff7-mobile-overlay {
         position: fixed;
         top: 0;
@@ -413,7 +298,7 @@ body {
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(10px);
         z-index: 999;
-        display: flex; /* Using flex to center content */
+        display: flex;
         justify-content: center;
         align-items: center;
         opacity: 0;
@@ -428,11 +313,11 @@ body {
     
     .ff7-mobile-nav-links {
         text-align: center;
-        padding-top: 80px; /* Push content down from nav bar */
+        padding-top: 80px;
         box-sizing: border-box;
         width: 100%;
         height: 100%;
-        overflow-y: auto; /* Allow scrolling if needed */
+        overflow-y: auto;
     }
 
     .ff7-mobile-link {
@@ -441,7 +326,6 @@ body {
         font-size: 1.5rem;
         text-transform: uppercase;
         display: block;
-        /* Slimmer buttons */
         margin: 15px 0; 
         padding: 10px;
         transition: color 0.3s, text-shadow 0.3s;
