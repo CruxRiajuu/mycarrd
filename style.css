@@ -1,3 +1,13 @@
+/* --- THIS IS THE NEW FONT DEFINITION --- */
+@font-face {
+    font-family: 'AdinaRegular';
+    /* IMPORTANT: You must upload your font file (e.g., AdinaRegular.woff2) to your GitHub repo */
+    /* and make sure this URL is correct. */
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Import Abel font for submenu */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -103,6 +113,8 @@ body {
     height: 80px;
     transition: color 0.3s, text-shadow 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
+    /* THIS RULE NOW WORKS BECAUSE OF @font-face */
+    font-family: 'AdinaRegular', sans-serif;
     position: relative;
     line-height: 80px;
     z-index: 10;
