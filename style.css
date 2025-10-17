@@ -5,7 +5,8 @@
 /* --- Base Styles --- */
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    /* THIS IS THE FIX: 'AdinaRegular' is now the default, with 'Roboto' as the fallback. */
+    font-family: 'AdinaRegular', 'Roboto', sans-serif;
 }
 
 /* --- Desktop Navigation Bar --- */
@@ -102,6 +103,7 @@ body {
     height: 80px;
     transition: color 0.3s, text-shadow 0.3s ease, transform 0.3s ease;
     white-space: nowrap;
+    /* This rule now inherits from the body, but it's good practice to keep it explicit */
     font-family: 'AdinaRegular', sans-serif;
     position: relative;
     line-height: 80px;
@@ -123,6 +125,7 @@ body {
     height: 30px;
     transition: color 0.3s, text-shadow 0.3s ease, background 0.3s, transform 0.3s ease;
     white-space: nowrap;
+    /* This rule also inherits from the body */
     font-family: 'AdinaRegular', sans-serif;
     position: relative;
     line-height: 30px;
@@ -322,6 +325,7 @@ body {
         margin: 15px 0; 
         padding: 10px;
         transition: color 0.3s, text-shadow 0.3s;
+        /* This rule also inherits from the body */
         font-family: 'AdinaRegular', sans-serif;
     }
 
