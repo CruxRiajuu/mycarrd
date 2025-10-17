@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const GITHUB_JSON_URL = 'https://raw.githubusercontent.com/CruxRiajuu/carrd-assets/main/nav-data.json';
     let navData = null;
 
-    // --- Core Menu Building Functions ---
     function buildMenu(items, isSubmenu = false) {
         const fragment = document.createDocumentFragment();
         items.forEach(item => {
@@ -59,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- Active Link Highlighting ---
     function updateActiveTrail() {
         document.querySelectorAll('.ff7-nav-bar a, .ff7-mobile-overlay a').forEach(link => link.classList.remove('active'));
         
@@ -86,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- Fetch and Initialize ---
     fetch(GITHUB_JSON_URL)
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
@@ -120,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
             window.dispatchEvent(new Event('fixed_elements_update'));
         });
 
-    // --- Mobile Menu Toggle Logic ---
     const hamburger = document.querySelector('.ff7-hamburger-menu');
     const mobileOverlay = document.querySelector('.ff7-mobile-overlay');
 
@@ -131,14 +127,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hamburger.addEventListener('click', toggleMenu);
     
-    // Close menu when clicking a link or the background
     mobileOverlay.addEventListener('click', function(e) {
         if (e.target.classList.contains('ff7-mobile-link') || e.target === mobileOverlay) {
             toggleMenu();
         }
     });
 
-    // --- Scroll Handling to Hide/Show Nav Bar ---
     const ff7BarToHide = document.querySelector('.ff7-nav-bar');
     if (ff7BarToHide) {
         let lastScrollY = window.scrollY;
