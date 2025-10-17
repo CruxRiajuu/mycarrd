@@ -113,9 +113,9 @@ body {
     color: white;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 700; /* Adjusted from 400 */
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.8px; /* Adjusted from 0.5px */
+    letter-spacing: 0.8px;
     padding: 8px 20px;
     display: flex;
     align-items: center;
@@ -123,7 +123,6 @@ body {
     height: 30px;
     transition: color 0.3s, text-shadow 0.3s ease, background 0.3s, transform 0.3s ease;
     white-space: nowrap;
-    /* THIS IS THE CHANGE */
     font-family: 'AdinaRegular', sans-serif;
     position: relative;
     line-height: 30px;
@@ -190,7 +189,6 @@ body {
     top: -2px; right: 100%; transform: none; border-top: none; border-right: 2px solid #00b9e5;
 }
 
-/* --- Marker Icon Styles --- */
 .nav-marker-icon-left,
 .nav-marker-icon-right {
     opacity: 0;
@@ -247,12 +245,6 @@ body {
     100% { transform: translateY(-50%) translateX(2px) scale(1.05); }
 }
 
-/* --- Responsive & Mobile Styles --- */
-.ff7-hamburger-menu, .ff7-mobile-overlay {
-    display: none;
-}
-
-/* Breakpoint for tablets and smaller */
 @media (max-width: 1024px) {
     .ff7-nav-list-left, .ff7-nav-list-right {
         display: none;
@@ -330,7 +322,6 @@ body {
         margin: 15px 0; 
         padding: 10px;
         transition: color 0.3s, text-shadow 0.3s;
-        /* THIS IS THE CHANGE */
         font-family: 'AdinaRegular', sans-serif;
     }
 
