@@ -1,0 +1,130 @@
+/* ALL FONT DEFINITIONS */
+@font-face {
+    font-family: 'AdinaRegular';
+    src: url('https://dl.dropboxusercontent.com/scl/fi/x9bmu7sborsohg919xni6/AdinaRegular.ttf?rlkey=r04u2rmyet9zs2ka2xwexmzqp') format('truetype');
+}
+
+@font-face { 
+    font-family: 'AdinaOutlined'; 
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/AdinaOutlined.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-family: 'RampageBrush';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/RampageBrush.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CruxComicHand';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/CruxComicHand.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CruxHand-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/CruxHand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Authority-Distressed';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Distressed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Authority-DistressedItalic';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-DistressedItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Authority-Italic';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Authority-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Authority-Rounded';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-Rounded.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Authority-RoundedItalic';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Authority-RoundedItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Autom-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Autom-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebal-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Bebal-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bison-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Bison-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CyberSocial-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/CyberSocial-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Excluded-z8XrX';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Excluded-z8XrX.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Excludeditalic-jEr99';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Excludeditalic-jEr99.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Friza-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Friza%20Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Friza';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Friza.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Genesys';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/Genesys.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HaleyHand-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/HaleyHand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MangaMasterBB_ital';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB_ital.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MangaMasterBB_reg';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB_reg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MangaMasterBB-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MangaMasterBB-BoldItal';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/MangaMasterBB-BoldItal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ZippyScratchHand-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/CruxRiajuu/mycarrd@main/ZippyScratchHand-Regular.ttf') format('truetype');
+}
